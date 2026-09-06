@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>장인어른을 위한 그랜져 비교 · 3000만원 내외</title>
-<meta name="description" content="3000만원 내외 현대 그랜저 실매물 6대 비교 — 연식·주행거리·세대·연비·유지비·옵션" />
+<title>장인어른을 위한 제네시스 G70 비교 · 3000만원 내외</title>
+<meta name="description" content="3000만원 내외 제네시스 G70 실매물 6대 비교 — 연식·주행거리·엔진·연비·유지비·옵션" />
 <style>
   :root{
     --bg:#0f1420; --card:#1a2130; --card2:#212a3d;
@@ -29,7 +29,7 @@
   .eyebrow{color:var(--gold);font-weight:700;letter-spacing:.14em;font-size:13px;text-transform:uppercase}
   h1{font-size:clamp(26px,5vw,42px);margin:12px 0 10px;font-weight:800;letter-spacing:-.02em}
   h1 .grad{background:linear-gradient(100deg,var(--gold),#fff 60%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
-  .sub{color:var(--muted);font-size:16px;max-width:640px;margin:0 auto}
+  .sub{color:var(--muted);font-size:16px;max-width:660px;margin:0 auto}
   .meta{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
   .pill{background:var(--chip);border:1px solid var(--line);color:var(--muted);font-size:13px;padding:6px 13px;border-radius:999px}
   .pill b{color:var(--text)}
@@ -38,7 +38,6 @@
   .sec-title{font-size:20px;font-weight:800;margin:6px 0 18px;display:flex;align-items:center;gap:9px}
   .sec-title .bar{width:5px;height:20px;border-radius:3px;background:linear-gradient(var(--gold),var(--gold2))}
 
-  /* card grid */
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
   .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:18px;overflow:hidden;
     display:flex;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s}
@@ -69,7 +68,6 @@
     background:linear-gradient(100deg,var(--gold),var(--gold2));color:#241a08;transition:filter .15s}
   .btn:hover{filter:brightness(1.08)}
 
-  /* table */
   .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card)}
   table{border-collapse:collapse;width:100%;min-width:760px;font-size:13.5px}
   th,td{padding:12px 14px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
@@ -79,13 +77,16 @@
   .best{color:var(--green);font-weight:800}
   .cell-sub{display:block;font-size:11px;color:var(--muted);font-weight:500}
 
-  /* recommend */
   .recgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
   .rec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
   .rec h3{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:6px}
   .rec .ic{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-size:18px}
   .rec p{font-size:13.5px;color:var(--muted)}
   .rec .win{margin-top:10px;font-size:13.5px;color:var(--gold);font-weight:700}
+
+  .callout{background:linear-gradient(100deg,rgba(230,185,128,.12),rgba(91,156,255,.08));border:1px solid var(--line);
+    border-radius:16px;padding:20px 22px;font-size:14px;color:var(--muted)}
+  .callout b{color:var(--text)}
 
   .checklist{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
   .checklist ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
@@ -102,24 +103,32 @@
 <nav class="nav">
   <div class="wrap">
     <span class="brand">🚗 장인어른 車 비교</span>
-    <a class="tab on" href="index.html">그랜저</a>
-    <a class="tab" href="g70.html">G70</a>
+    <a class="tab" href="index.html">그랜저</a>
+    <a class="tab on" href="g70.html">G70</a>
   </div>
 </nav>
 <header>
   <div class="wrap">
-    <div class="eyebrow">장인어른을 위한 車</div>
-    <h1>3000만원 그랜져, <span class="grad">이 6대를 봤어요</span></h1>
-    <p class="sub">아버님 모실 세단으로 현대 그랜저 실매물을 예산 3,000만원 내외에서 골랐습니다.
-      연식·주행거리·세대·연비·유지비·옵션까지 한눈에 비교해 보세요.</p>
+    <div class="eyebrow">제네시스 스포츠 세단</div>
+    <h1>3000만원 G70, <span class="grad">이 6대를 봤어요</span></h1>
+    <p class="sub">그랜저가 편안함 중심이라면, 제네시스 G70은 더 젊고 스포티한 선택입니다.
+      3,000만원 내외 실매물을 엔진·바디·세대별로 골라 연식·주행·연비·유지비·옵션까지 비교했습니다.</p>
     <div class="meta">
-      <span class="pill">예산 <b>2,500 ~ 3,200만원</b></span>
+      <span class="pill">예산 <b>2,400 ~ 3,300만원</b></span>
       <span class="pill">매물 <b>6대 선별</b></span>
       <span class="pill">출처 <b>KB차차차 실매물</b></span>
       <span class="pill">기준일 <b>2026.09.07</b></span>
     </div>
   </div>
 </header>
+
+<section class="wrap">
+  <div class="callout">
+    <b>그랜저 vs G70, 뭐가 다를까요?</b> &nbsp;그랜저는 넓은 뒷좌석과 부드러운 승차감의 <b>대형 세단(모시기 편안)</b>,
+    G70은 후륜구동 기반의 <b>준중형 스포츠 세단(운전 재미·디자인)</b>입니다. 뒷좌석 공간과 정숙함은 그랜저가,
+    주행감과 젊은 감각은 G70이 앞섭니다. 아버님 취향에 따라 두 페이지를 오가며 비교해 보세요.
+  </div>
+</section>
 
 <section class="wrap">
   <div class="sec-title"><span class="bar"></span>선별 매물 한눈에 보기</div>
@@ -131,7 +140,7 @@
   <div class="tablewrap">
     <table id="cmp"></table>
   </div>
-  <p class="note" style="margin-top:10px">※ 연비는 공인 복합연비, 자동차세는 배기량 기준 연간 근사치입니다. 실제 값은 매물·연식·감면에 따라 달라집니다.</p>
+  <p class="note" style="margin-top:10px">※ 마력·연비는 공인 제원 기준, 자동차세는 배기량 기준 연간 근사치입니다. 실제 값은 매물·연식·감면에 따라 달라집니다.</p>
 </section>
 
 <section class="wrap">
@@ -143,13 +152,13 @@
   <div class="sec-title"><span class="bar"></span>실물 보러 가기 전 체크리스트</div>
   <div class="checklist">
     <ul>
-      <li><span class="ck">✓</span><span><b>사고이력·보험이력</b> — 카히스토리(무료 조회)로 전손·침수·소유자 변경 확인</span></li>
-      <li><span class="ck">✓</span><span><b>실주행 vs 계기판</b> — 정비이력의 주행거리와 계기판 일치 여부</span></li>
-      <li><span class="ck">✓</span><span><b>하이브리드 배터리</b> — 르블랑(HEV)은 배터리 보증(10년/20만km) 잔여 확인</span></li>
-      <li><span class="ck">✓</span><span><b>LPG 봄베 검사</b> — LPG 차는 봄베 재검사 시기 확인</span></li>
-      <li><span class="ck">✓</span><span><b>하부·타이어</b> — 하부 부식, 타이어 4짝 제조주차 확인</span></li>
-      <li><span class="ck">✓</span><span><b>편의옵션 작동</b> — 통풍/열선시트, 어라운드뷰, HUD 실제 작동</span></li>
-      <li><span class="ck">✓</span><span><b>성능점검기록부</b> — 매매상사 제공 서류와 실차 대조</span></li>
+      <li><span class="ck">✓</span><span><b>사고이력·보험이력</b> — 카히스토리로 전손·침수·소유자 변경 확인</span></li>
+      <li><span class="ck">✓</span><span><b>후륜/사륜(AWD)</b> — Elite·스포츠는 AWD가 많음. 눈길·빗길 안정성에 유리</span></li>
+      <li><span class="ck">✓</span><span><b>타이어 편마모</b> — 스포츠 세단 특성상 뒷타이어 마모·정렬 상태 확인</span></li>
+      <li><span class="ck">✓</span><span><b>디젤(2.2D)</b> — DPF·인젝터 이력, 저속 단거리 위주면 디젤은 비추천</span></li>
+      <li><span class="ck">✓</span><span><b>순정 vs 튜닝</b> — 3.3T는 배기·흡기 튜닝 흔적, ECU 맵핑 여부 확인</span></li>
+      <li><span class="ck">✓</span><span><b>편의옵션 작동</b> — 통풍시트, 렉시콘 사운드, HUD, 어라운드뷰 실제 작동</span></li>
+      <li><span class="ck">✓</span><span><b>뒷좌석 공간</b> — 그랜저보다 좁음. 아버님 뒷좌석 승차감 직접 확인</span></li>
       <li><span class="ck">✓</span><span><b>총비용</b> — 차값 외 이전비·매매수수료·탁송비 별도 계산</span></li>
     </ul>
   </div>
@@ -167,59 +176,58 @@
 <script>
 const cars = [
   {
-    seq:"28634988", gen:"GN7 신형", name:"디 올 뉴 그랜저 2.5 가솔린 프리미엄",
-    price:2950, year:"2023.03", km:24729, region:"경기", fuel:"가솔린",
-    disp:"2,497cc", econ:11.7, tax:65,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28634988_4552128989739423.jpeg",
-    pick:"최저 주행", tags:[["가솔린","f"],["신형 GN7","v"],["2.4만km","g"]],
-    note:"신형 그랜저 중 <b>가장 적은 주행거리(2.4만km)</b>. 무난한 2.5 가솔린에 최신 디자인·편의사양까지, 가장 균형 잡힌 선택."
+    seq:"28689463", gen:"더뉴 G70", name:"더 뉴 G70 2.0T 스탠다드",
+    price:2819, year:"2021.01", km:12116, region:"경기", fuel:"가솔린",
+    power:252, disp:"1,998cc", econ:10.2, tax:52,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img08/img2868/28689463_6196519006484865.jpeg",
+    pick:"최저 주행", tags:[["2.0T 가솔린","f"],["1.2만km","g"],["페이스리프트","v"]],
+    note:"페이스리프트 G70 중 <b>주행거리 1.2만km로 사실상 신차급</b>. 252마력 2.0 터보로 무난하게 빠르고, 유지비 부담도 적은 가장 균형 잡힌 선택."
   },
   {
-    seq:"28496946", gen:"GN7 신형", name:"디 올 뉴 그랜저 3.5 가솔린 프리미엄",
-    price:2699, year:"2023.08", km:33104, region:"경기", fuel:"가솔린",
-    disp:"3,470cc", econ:9.6, tax:90,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img09/img2849/28496946_5940147628907818.jpeg",
-    pick:"가성비 신형", tags:[["V6 3.5","f"],["신형 GN7","v"],["힘 좋음","g"]],
-    note:"신형 그랜저 <b>V6 3.5 가솔린을 2,699만원</b>에. 정숙성·가속감이 좋아 어르신 모시기 편안. 대신 연비·세금은 다소 높음."
+    seq:"28733193", gen:"슈팅브레이크", name:"G70 슈팅브레이크 2.0T 프리미엄",
+    price:3250, year:"2022.08", km:8728, region:"경기", fuel:"가솔린",
+    power:252, disp:"1,998cc", econ:10.2, tax:52,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2873/28733193_7230980664301311.jpeg",
+    pick:"신차급 왜건", tags:[["왜건 바디","v"],["0.9만km","g"],["프리미엄","f"]],
+    note:"국내 유일 감성 왜건 <b>슈팅브레이크, 주행 8천km 신차급</b>. 세단보다 짐 공간이 넉넉해 실용성↑. 디자인·희소성으로 만족도 높은 매물."
   },
   {
-    seq:"28521955", gen:"GN7 신형", name:"디 올 뉴 그랜저 3.5 LPG 프리미엄",
-    price:2640, year:"2023.07", km:36839, region:"경기", fuel:"LPG",
-    disp:"3,470cc", econ:8.0, tax:90,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img02/img2852/28521955_1621422289036158.jpeg",
-    pick:"연료비 최저", tags:[["LPG","f"],["신형 GN7","v"],["연료비↓","g"]],
-    note:"신형에 <b>LPG라 연료비가 가장 저렴</b>(리터 900~1,100원대). 시내 위주로 많이 타실 아버님께 유지비 부담이 가장 적은 조합."
+    seq:"28660945", gen:"더뉴 G70", name:"더 뉴 G70 3.3T AWD 스탠다드",
+    price:3272, year:"2020.11", km:31551, region:"경기", fuel:"가솔린",
+    power:370, disp:"3,342cc", econ:8.5, tax:87,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img06/img2866/28660945_6117864401833804.jpg",
+    pick:"최강 퍼포먼스", tags:[["V6 3.3T","f"],["370마력","g"],["AWD","v"]],
+    note:"<b>370마력 V6 트윈터보 + 사륜(AWD)</b>. 제로백 4.7초의 정통 스포츠 세단. 다만 연비·세금이 높아 ‘달리는 재미’ 우선일 때 추천."
   },
   {
-    seq:"28545109", gen:"IG 더뉴", name:"더 뉴 그랜저 하이브리드 2.4 르블랑",
-    price:2860, year:"2022.06", km:36460, region:"경기", fuel:"하이브리드",
-    disp:"2,359cc", econ:16.2, tax:61,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2854/28545109_2165769414091466.jpeg",
-    pick:"연비 최고", tags:[["하이브리드","f"],["연비 16km","g"],["세금 최저","g"]],
-    note:"<b>공인연비 16.2km/L로 압도적</b>. 자동차세도 가장 낮고 정숙. 배터리 보증(10년/20만km)이 남아 장거리·시내 모두 유지비 최소."
+    seq:"28045181", gen:"더뉴 G70", name:"더 뉴 G70 2.2D 4WD 스탠다드",
+    price:2799, year:"2020.12", km:89141, region:"경기", fuel:"디젤",
+    power:202, disp:"2,199cc", econ:14.5, tax:57,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2804/28045181_19245150509302431.jpg",
+    pick:"장거리 연비", tags:[["2.2 디젤","f"],["연비 14.5","g"],["AWD","v"]],
+    note:"<b>디젤이라 고속·장거리 연비가 가장 좋음</b>. 사륜까지 갖춰 안정적. 주행거리(8.9만km)가 있어 가격이 착한 대신 DPF 등 디젤 이력 확인 필수."
   },
   {
-    seq:"28459176", gen:"IG 더뉴", name:"더 뉴 그랜저 3.3 캘리그래피",
-    price:2540, year:"2021.05", km:65650, region:"경기", fuel:"가솔린",
-    disp:"3,342cc", econ:9.7, tax:87,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img05/img2845/28459176_5163176336325363.jpeg",
-    pick:"최고급 트림", tags:[["캘리그래피","v"],["V6 3.3","f"],["최저가","g"]],
-    note:"그랜저 <b>최상위 트림 ‘캘리그래피’를 2,540만원</b>에. 나파가죽·통풍시트 등 풀옵션급. 주행거리는 있지만 품위 있게 모시기 좋은 값."
+    seq:"28635578", gen:"G70 (전기형)", name:"G70 2.0T AWD Elite",
+    price:2450, year:"2020.04", km:19349, region:"서울", fuel:"가솔린",
+    power:252, disp:"1,998cc", econ:10.0, tax:52,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28635578_4563159057436899.jpeg",
+    pick:"저주행 최저가", tags:[["2.0T 가솔린","f"],["1.9만km","g"],["최저가","g"]],
+    note:"전기형이지만 <b>주행 1.9만km에 2,450만원으로 이 목록 최저가</b>. Elite 트림 + AWD. 가성비로 G70에 입문하기 딱 좋은 매물."
   },
   {
-    seq:"27996431", gen:"IG 더뉴", name:"더 뉴 그랜저 2.5 캘리그래피",
-    price:2800, year:"2022.07", km:26000, region:"경남", fuel:"가솔린",
-    disp:"2,497cc", econ:11.6, tax:65,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img09/img2799/27996431_17268568187402098.jpg",
-    pick:"저주행·풀옵션", tags:[["캘리그래피","v"],["2.6만km","g"],["가솔린","f"]],
-    note:"<b>캘리그래피 최상위 옵션에 주행 2.6만km</b>. 2.5 가솔린이라 세금·연비도 부담 적고, 관리만 좋다면 신차 느낌으로 오래 탈 만."
+    seq:"27957280", gen:"더뉴 G70", name:"더 뉴 G70 2.0T 4WD 스포츠 패키지",
+    price:2880, year:"2020.12", km:29447, region:"서울", fuel:"가솔린",
+    power:252, disp:"1,998cc", econ:10.0, tax:52,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img05/img2795/27957280_16550032818542261.jpg",
+    pick:"스포츠 패키지", tags:[["스포츠팩","v"],["2.9만km","g"],["AWD","f"]],
+    note:"<b>스포츠 패키지</b>로 브렘보 브레이크·전용 디자인 등 외관·제동이 강화된 사양. 2.0T라 유지비는 부담 없이 스포티한 감각을 원할 때."
   }
 ];
 
 const won = n => n.toLocaleString('ko-KR');
 const detail = s => `https://www.kbchachacha.com/public/car/detail.kbc?carSeq=${s}`;
 
-// cards
 document.getElementById('cards').innerHTML = cars.map(c=>`
   <article class="card">
     <div class="thumb">
@@ -234,8 +242,8 @@ document.getElementById('cards').innerHTML = cars.map(c=>`
       <div class="specs">
         <div class="spec"><div class="k">연식</div><div class="v">${c.year}</div></div>
         <div class="spec"><div class="k">주행거리</div><div class="v">${won(c.km)} km</div></div>
+        <div class="spec"><div class="k">최고출력</div><div class="v">${c.power} 마력</div></div>
         <div class="spec"><div class="k">복합연비</div><div class="v">${c.econ} km/L</div></div>
-        <div class="spec"><div class="k">연간 자동차세</div><div class="v">약 ${c.tax}만원</div></div>
       </div>
       <div class="tags">${c.tags.map(t=>`<span class="tag ${t[1]}">${t[0]}</span>`).join('')}</div>
       <div class="note">${c.note}</div>
@@ -243,33 +251,33 @@ document.getElementById('cards').innerHTML = cars.map(c=>`
     </div>
   </article>`).join('');
 
-// comparison table
 const minKm = Math.min(...cars.map(c=>c.km));
 const maxEcon = Math.max(...cars.map(c=>c.econ));
+const maxPower = Math.max(...cars.map(c=>c.power));
 const minTax = Math.min(...cars.map(c=>c.tax));
 const minPrice = Math.min(...cars.map(c=>c.price));
 const rows = [
   ["가격", c=>`${won(c.price)}만원`, c=>c.price===minPrice],
-  ["세대", c=>c.gen, ()=>false],
+  ["세대/바디", c=>c.gen, ()=>false],
   ["연식", c=>c.year, ()=>false],
   ["주행거리", c=>`${won(c.km)}km`, c=>c.km===minKm],
   ["연료", c=>c.fuel, ()=>false],
+  ["최고출력", c=>`${c.power}마력`, c=>c.power===maxPower],
   ["배기량", c=>c.disp, ()=>false],
   ["복합연비", c=>`${c.econ}km/L`, c=>c.econ===maxEcon],
   ["연간 자동차세", c=>`약 ${c.tax}만원`, c=>c.tax===minTax],
   ["트림 특징", c=>c.pick, ()=>false],
 ];
-let thead = `<thead><tr><th>항목</th>${cars.map(c=>`<th>${c.name.replace('그랜저 ','그랜저 ')}<span class="cell-sub">${c.gen}</span></th>`).join('')}</tr></thead>`;
+let thead = `<thead><tr><th>항목</th>${cars.map(c=>`<th>${c.name}<span class="cell-sub">${c.gen}</span></th>`).join('')}</tr></thead>`;
 let tbody = `<tbody>${rows.map(r=>`<tr><th>${r[0]}</th>${cars.map(c=>{
   const best=r[2](c); return `<td class="${best?'best':''}">${r[1](c)}${best?' ★':''}</td>`;}).join('')}</tr>`).join('')}</tbody>`;
 document.getElementById('cmp').innerHTML = thead+tbody;
 
-// recommendations
 const recs = [
-  {ic:"⛽",bg:"rgba(79,209,165,.16)",t:"유지비를 가장 아끼려면",p:"연비 16.2km/L에 자동차세도 최저. 기름값·세금 부담이 가장 적어요.",win:"→ 더 뉴 그랜저 하이브리드 2.4 르블랑"},
-  {ic:"✨",bg:"rgba(177,140,255,.16)",t:"가장 최신 차를 원하면",p:"신형 GN7 세대에 주행 2.4만km. 최신 디자인·안전·편의사양.",win:"→ 디 올 뉴 그랜저 2.5 가솔린 프리미엄"},
-  {ic:"👑",bg:"rgba(230,185,128,.18)",t:"최고급 옵션으로 모시려면",p:"캘리그래피 풀옵션(통풍시트·나파가죽)을 가장 저렴하게.",win:"→ 더 뉴 그랜저 3.3 캘리그래피"},
-  {ic:"💰",bg:"rgba(91,156,255,.16)",t:"연료비까지 최소로",p:"신형인데 LPG라 주유비가 가장 저렴. 시내 주행 많으면 유리.",win:"→ 디 올 뉴 그랜저 3.5 LPG 프리미엄"},
+  {ic:"👍",bg:"rgba(79,209,165,.16)",t:"가장 무난한 데일리",p:"주행 1.2만km 신차급 2.0T. 성능·유지비 균형이 가장 좋아요.",win:"→ 더 뉴 G70 2.0T 스탠다드"},
+  {ic:"🎒",bg:"rgba(177,140,255,.16)",t:"실용성·희소성까지",p:"국내 유일 감성 왜건, 짐 공간 넉넉 + 주행 8천km 신차급.",win:"→ G70 슈팅브레이크 2.0T 프리미엄"},
+  {ic:"🏁",bg:"rgba(255,138,138,.16)",t:"달리는 재미가 1순위",p:"370마력 V6 + AWD. 제로백 4.7초의 정통 스포츠 세단.",win:"→ 더 뉴 G70 3.3T AWD"},
+  {ic:"💰",bg:"rgba(91,156,255,.16)",t:"가성비로 입문",p:"주행 1.9만km에 2,450만원, 목록 최저가 + AWD.",win:"→ G70 2.0T AWD Elite"},
 ];
 document.getElementById('recs').innerHTML = recs.map(r=>`
   <div class="rec">
