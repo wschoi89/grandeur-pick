@@ -87,7 +87,11 @@
     border-radius:16px;padding:20px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
   .srcbox-txt{flex:1;min-width:240px;font-size:14px;color:var(--muted)}
   .srcbox-txt b{color:var(--text)}
+  .srcbtns{display:flex;flex-direction:column;gap:10px}
   .srcbtn{margin-top:0 !important;white-space:nowrap;padding:12px 20px;text-align:center}
+  .srcbtn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold2)}
+  .srcbtn.ghost:hover{background:rgba(230,185,128,.12);filter:none}
+  .srcbadge{position:absolute;top:12px;left:12px;background:rgba(91,156,255,.9);color:#08122a;font-size:11px;font-weight:800;padding:5px 10px;border-radius:8px}
 
   footer{padding:32px 0 60px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.8}
   footer .src{color:var(--gold)}
@@ -120,12 +124,22 @@
 </section>
 
 <section class="wrap">
-  <div class="sec-title"><span class="bar"></span>조건 충족 매물</div>
+  <div class="sec-title"><span class="bar"></span>조건 충족 매물 · <span style="color:var(--muted);font-weight:600">KB차차차</span></div>
   <div class="grid" id="cards"></div>
 </section>
 
 <section class="wrap">
-  <div class="sec-title"><span class="bar"></span>스펙 비교표</div>
+  <div class="sec-title"><span class="bar"></span>조건 충족 매물 · <span style="color:var(--muted);font-weight:600">케이카(K Car) 직영</span></div>
+  <div class="callout" style="margin-bottom:16px;border-color:var(--line);background:linear-gradient(100deg,rgba(91,156,255,.1),rgba(230,185,128,.06))">
+    <b>케이카 직영 인증차</b> — 케이카가 직접 매입·진단·보증하는 차량이라 이력·상태가 균일합니다.
+    케이카는 전체 검색 데이터를 암호화해 두어(자동 수집 차단) 조건에 맞는 <b>공개 매물 2대</b>만 가져왔어요.
+    더 많은 케이카 그랜저는 아래 “케이카에서 검색” 버튼으로 직접 보실 수 있습니다.
+  </div>
+  <div class="grid" id="kcards"></div>
+</section>
+
+<section class="wrap">
+  <div class="sec-title"><span class="bar"></span>스펙 비교표 · <span style="color:var(--muted);font-weight:600">KB차차차</span></div>
   <div class="tablewrap"><table id="cmp"></table></div>
   <p class="note" style="margin-top:10px">※ 연비는 공인 복합연비, 자동차세는 배기량 기준 연간 근사치. ‘용도이력 있음’은 렌트·리스 등 사업용 사용 이력이 있었다는 뜻이라 참고하세요.</p>
 </section>
@@ -150,10 +164,14 @@
   <div class="sec-title"><span class="bar"></span>더 많은 매물 보기</div>
   <div class="srcbox">
     <div class="srcbox-txt">
-      더 많은 그랜저 매물을 실시간으로 보시려면 아래 버튼을 눌러 보세요. <b>KB차차차</b> 그랜저 전체 매물이 열립니다.
+      더 많은 그랜저 매물을 실시간으로 보시려면 아래 버튼을 눌러 보세요. 두 사이트 모두 붙여넣어도 잘 열립니다.
     </div>
-    <a class="btn srcbtn" target="_blank" rel="noopener"
-      href="https://www.kbchachacha.com/public/search/list.kbc#!?page=1&sort=-orderDate&makerCode=101&classCode=1101">KB차차차 그랜저 전체매물 →</a>
+    <div class="srcbtns">
+      <a class="btn srcbtn" target="_blank" rel="noopener"
+        href="https://www.kbchachacha.com/public/search/list.kbc#!?page=1&sort=-orderDate&makerCode=101&classCode=1101">KB차차차 그랜저 전체매물 →</a>
+      <a class="btn srcbtn ghost" target="_blank" rel="noopener"
+        href="https://www.kcar.com/bc/search">케이카에서 검색 (현대 › 그랜저) →</a>
+    </div>
   </div>
 </section>
 
@@ -221,6 +239,46 @@ document.getElementById('cards').innerHTML = cars.map(c=>`
       </div>
       <div class="note">${c.note}</div>
       <a class="btn" href="${detail(c.seq)}" target="_blank" rel="noopener">KB차차차에서 매물 보기 · 카히스토리 확인 →</a>
+    </div>
+  </article>`).join('');
+
+// ── 케이카(K Car) 직영 매물 ──
+const kcars = [
+  { color:"쥐색(다크그레이)", hex:"#5d6068", name:"그랜저 GN7 2.5 가솔린 캘리그래피",
+    price:3660, year:"2023", km:27384, center:"화성직영점", disp:"2,497cc", econ:11.7, tax:65,
+    img:"https://img.kcar.com/3dcarpicture/2026/07/175/61386947_1/main/main780.jpg",
+    note:"<b>최상위 캘리그래피 + 다크그레이</b>. 케이카 직영 인증차라 진단·보증이 기본. 2.5 가솔린이라 세금·연비 부담이 적음." },
+  { color:"검정색", hex:"#111", name:"그랜저 GN7 3.5 가솔린 4WD 캘리그래피",
+    price:3400, year:"2023", km:31874, center:"세종공주직영점", disp:"3,470cc", econ:9.0, tax:90,
+    img:"https://img.kcar.com/3dcarpicture/2026/05/169/61358647_1/main/main780.jpg",
+    note:"<b>V6 3.5 + 4륜 + 캘리그래피 풀옵션</b>을 3,400만원에. 힘·정숙성 최고 수준. 케이카 직영 인증차." }
+];
+document.getElementById('kcards').innerHTML = kcars.map(c=>`
+  <article class="card">
+    <div class="thumb" style="display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 30% 20%, ${c.hex} 0%, #10151f 75%)">
+      <div style="text-align:center">
+        <div style="font-size:30px">🚘</div>
+        <div style="font-weight:800;color:#fff;font-size:15px;margin-top:6px;letter-spacing:.02em">그랜저 GN7</div>
+        <div style="font-size:12px;color:#cbd5e6;margin-top:2px">${c.color}</div>
+      </div>
+      <span class="srcbadge">K Car 직영</span>
+    </div>
+    <div class="card-body">
+      <div class="car-name">${c.name}</div>
+      <div class="price">${won(c.price)}<small> 만원</small></div>
+      <div class="specs">
+        <div class="spec"><div class="k">연식</div><div class="v">${c.year}년</div></div>
+        <div class="spec"><div class="k">주행거리</div><div class="v">${won(c.km)} km</div></div>
+        <div class="spec"><div class="k">복합연비</div><div class="v">${c.econ} km/L</div></div>
+        <div class="spec"><div class="k">직영점</div><div class="v">${c.center}</div></div>
+      </div>
+      <div class="hist">
+        <span class="h">케이카 진단</span>
+        <span class="h">직영 보증</span>
+        <span class="h">가솔린</span>
+      </div>
+      <div class="note">${c.note}</div>
+      <a class="btn" href="https://www.kcar.com/bc/search" target="_blank" rel="noopener">케이카에서 그랜저 매물 보기 →</a>
     </div>
   </article>`).join('');
 
