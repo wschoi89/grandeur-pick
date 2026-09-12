@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>장인어른을 위한 그랜져 비교 · 3000만원 내외</title>
-<meta name="description" content="3000만원 내외 현대 그랜저 실매물 6대 비교 — 연식·주행거리·세대·연비·유지비·옵션" />
+<title>장인어른을 위한 그랜져 · 조건별 추천 매물</title>
+<meta name="description" content="2023년↑·어두운색·가솔린·4만km↓·클린이력 조건에 맞춘 디 올 뉴 그랜저 실매물 비교" />
 <style>
   :root{
     --bg:#0f1420; --card:#1a2130; --card2:#212a3d;
@@ -18,27 +18,27 @@
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1120px;margin:0 auto;padding:0 18px}
 
-  .nav{position:sticky;top:0;z-index:50;background:rgba(15,20,32,.82);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-  .nav .wrap{display:flex;gap:8px;align-items:center;padding:11px 18px}
-  .nav .brand{font-weight:800;font-size:15px;margin-right:auto;color:var(--gold)}
-  .nav a.tab{font-size:14px;font-weight:700;color:var(--muted);padding:8px 16px;border-radius:999px;border:1px solid transparent}
-  .nav a.tab.on{color:#241a08;background:linear-gradient(100deg,var(--gold),var(--gold2))}
-  .nav a.tab:not(.on):hover{color:var(--text);border-color:var(--line)}
-
-  header{padding:44px 0 26px;text-align:center}
+  header{padding:52px 0 22px;text-align:center}
   .eyebrow{color:var(--gold);font-weight:700;letter-spacing:.14em;font-size:13px;text-transform:uppercase}
   h1{font-size:clamp(26px,5vw,42px);margin:12px 0 10px;font-weight:800;letter-spacing:-.02em}
   h1 .grad{background:linear-gradient(100deg,var(--gold),#fff 60%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent}
   .sub{color:var(--muted);font-size:16px;max-width:640px;margin:0 auto}
-  .meta{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
-  .pill{background:var(--chip);border:1px solid var(--line);color:var(--muted);font-size:13px;padding:6px 13px;border-radius:999px}
-  .pill b{color:var(--text)}
 
-  section{padding:26px 0}
-  .sec-title{font-size:20px;font-weight:800;margin:6px 0 18px;display:flex;align-items:center;gap:9px}
+  /* conditions banner */
+  .cond{margin:22px auto 0;max-width:840px;display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
+  .cond .c{display:flex;align-items:center;gap:7px;background:var(--chip);border:1px solid var(--line);
+    padding:8px 14px;border-radius:10px;font-size:13.5px;font-weight:600}
+  .cond .c .ck{color:var(--green);font-weight:900}
+  .cond .c b{color:var(--gold)}
+
+  section{padding:24px 0}
+  .sec-title{font-size:20px;font-weight:800;margin:6px 0 16px;display:flex;align-items:center;gap:9px}
   .sec-title .bar{width:5px;height:20px;border-radius:3px;background:linear-gradient(var(--gold),var(--gold2))}
 
-  /* card grid */
+  .callout{background:linear-gradient(100deg,rgba(255,138,138,.12),rgba(230,185,128,.08));border:1px solid rgba(255,138,138,.3);
+    border-radius:14px;padding:16px 18px;font-size:13.5px;color:var(--muted)}
+  .callout b{color:var(--text)}
+
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
   .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:18px;overflow:hidden;
     display:flex;flex-direction:column;transition:transform .18s ease,border-color .18s ease,box-shadow .18s}
@@ -48,8 +48,9 @@
   .badge{position:absolute;top:12px;left:12px;background:rgba(15,20,32,.82);backdrop-filter:blur(6px);
     border:1px solid var(--line);color:#fff;font-size:12px;font-weight:700;padding:5px 11px;border-radius:999px}
   .badge.pick{background:linear-gradient(100deg,var(--gold),var(--gold2));color:#241a08;border:none}
-  .gen{position:absolute;top:12px;right:12px;background:rgba(15,20,32,.82);border:1px solid var(--line);
-    color:var(--gold);font-size:11px;font-weight:800;letter-spacing:.04em;padding:5px 10px;border-radius:8px}
+  .colorchip{position:absolute;top:12px;right:12px;display:flex;align-items:center;gap:6px;background:rgba(15,20,32,.82);
+    border:1px solid var(--line);color:#fff;font-size:12px;font-weight:700;padding:5px 10px;border-radius:8px}
+  .dot{width:12px;height:12px;border-radius:50%;border:1px solid #ffffff55}
   .card-body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:12px;flex:1}
   .car-name{font-size:16.5px;font-weight:800;letter-spacing:-.01em;line-height:1.35}
   .price{font-size:26px;font-weight:900;color:#fff}
@@ -58,34 +59,23 @@
   .spec{background:#141b29;border:1px solid var(--line);border-radius:10px;padding:9px 11px}
   .spec .k{font-size:11px;color:var(--muted)}
   .spec .v{font-size:14px;font-weight:700;margin-top:1px}
-  .tags{display:flex;flex-wrap:wrap;gap:6px}
-  .tag{font-size:11.5px;padding:4px 9px;border-radius:7px;font-weight:700;border:1px solid transparent}
-  .tag.f{background:rgba(91,156,255,.14);color:var(--blue);border-color:rgba(91,156,255,.3)}
-  .tag.g{background:rgba(79,209,165,.14);color:var(--green);border-color:rgba(79,209,165,.3)}
-  .tag.v{background:rgba(177,140,255,.14);color:var(--violet);border-color:rgba(177,140,255,.3)}
+  .hist{display:flex;flex-wrap:wrap;gap:6px}
+  .h{font-size:11.5px;padding:4px 9px;border-radius:7px;font-weight:700;border:1px solid transparent;background:rgba(79,209,165,.14);color:var(--green);border-color:rgba(79,209,165,.3)}
+  .h.warn{background:rgba(230,185,128,.14);color:var(--gold);border-color:rgba(230,185,128,.3)}
   .note{font-size:13px;color:var(--muted)}
   .note b{color:var(--text)}
   .btn{margin-top:auto;text-align:center;padding:12px;border-radius:12px;font-weight:800;font-size:14px;
     background:linear-gradient(100deg,var(--gold),var(--gold2));color:#241a08;transition:filter .15s}
   .btn:hover{filter:brightness(1.08)}
 
-  /* table */
   .tablewrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card)}
-  table{border-collapse:collapse;width:100%;min-width:760px;font-size:13.5px}
+  table{border-collapse:collapse;width:100%;min-width:820px;font-size:13.5px}
   th,td{padding:12px 14px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
   thead th{background:#141b29;color:var(--gold);font-weight:800;position:sticky;top:0}
   tbody th{text-align:left;font-weight:700;color:var(--text);background:#141b29aa}
   tbody tr:hover td{background:#1e273a}
   .best{color:var(--green);font-weight:800}
   .cell-sub{display:block;font-size:11px;color:var(--muted);font-weight:500}
-
-  /* recommend */
-  .recgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-  .rec{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .rec h3{font-size:15px;display:flex;align-items:center;gap:8px;margin-bottom:6px}
-  .rec .ic{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;font-size:18px}
-  .rec p{font-size:13.5px;color:var(--muted)}
-  .rec .win{margin-top:10px;font-size:13.5px;color:var(--gold);font-weight:700}
 
   .checklist{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
   .checklist ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}
@@ -97,69 +87,61 @@
     border-radius:16px;padding:20px 22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap}
   .srcbox-txt{flex:1;min-width:240px;font-size:14px;color:var(--muted)}
   .srcbox-txt b{color:var(--text)}
-  .srcbtns{display:flex;flex-direction:column;gap:10px}
   .srcbtn{margin-top:0 !important;white-space:nowrap;padding:12px 20px;text-align:center}
-  .srcbtn.ghost{background:transparent;color:var(--gold);border:1px solid var(--gold2)}
-  .srcbtn.ghost:hover{background:rgba(230,185,128,.12);filter:none}
 
-  footer{padding:34px 0 60px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.8}
+  footer{padding:32px 0 60px;text-align:center;color:var(--muted);font-size:12.5px;line-height:1.8}
   footer .src{color:var(--gold)}
   .disc{max-width:720px;margin:10px auto 0;font-size:12px;opacity:.85}
 </style>
 </head>
 <body>
-<nav class="nav">
-  <div class="wrap">
-    <span class="brand">🚗 장인어른 車 비교</span>
-    <a class="tab on" href="index.html">그랜저</a>
-    <a class="tab" href="g70.html">G70</a>
-  </div>
-</nav>
 <header>
   <div class="wrap">
-    <div class="eyebrow">장인어른을 위한 車</div>
-    <h1>3000만원 그랜져, <span class="grad">이 6대를 봤어요</span></h1>
-    <p class="sub">아버님 모실 세단으로 현대 그랜저 실매물을 예산 3,000만원 내외에서 골랐습니다.
-      연식·주행거리·세대·연비·유지비·옵션까지 한눈에 비교해 보세요.</p>
-    <div class="meta">
-      <span class="pill">예산 <b>2,500 ~ 3,200만원</b></span>
-      <span class="pill">매물 <b>6대 선별</b></span>
-      <span class="pill">출처 <b>KB차차차 실매물</b></span>
-      <span class="pill">기준일 <b>2026.09.07</b></span>
+    <div class="eyebrow">장인어른 조건 맞춤</div>
+    <h1>그랜져, <span class="grad">조건에 맞춰 골랐어요</span></h1>
+    <p class="sub">장인어른께서 주신 조건대로 <b>디 올 뉴 그랜저(신형)</b> 실매물만 추렸습니다.
+      전부 어두운색·가솔린·저주행에 전손·침수·소유자변경 없는 깨끗한 매물이에요.</p>
+    <div class="cond">
+      <span class="c"><span class="ck">✓</span> 그랜저 <b>2023년식↑</b></span>
+      <span class="c"><span class="ck">✓</span> <b>어두운색</b> (블랙·그레이)</span>
+      <span class="c"><span class="ck">✓</span> <b>가솔린</b></span>
+      <span class="c"><span class="ck">✓</span> 주행 <b>4만km↓</b></span>
+      <span class="c"><span class="ck">✓</span> <b>전손·침수無</b></span>
     </div>
   </div>
 </header>
 
 <section class="wrap">
-  <div class="sec-title"><span class="bar"></span>선별 매물 한눈에 보기</div>
+  <div class="callout">
+    <b>보험사고이력(내차·타차 수리) 안내</b> — 아래 매물은 전손·침수·소유자변경이 <b>없는</b> 매물만 골랐습니다.
+    다만 <b>보험처리(사고 수리) 세부 이력</b>은 KB차차차가 로봇 자동조회를 막아둬 여기서 미리 못 넣었어요.
+    각 카드의 <b>“KB차차차에서 매물 보기”</b>를 눌러 상세페이지에서 <b>무료 ‘카히스토리’ 조회</b>로 최종 확인해 주세요.
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="sec-title"><span class="bar"></span>조건 충족 매물</div>
   <div class="grid" id="cards"></div>
 </section>
 
 <section class="wrap">
   <div class="sec-title"><span class="bar"></span>스펙 비교표</div>
-  <div class="tablewrap">
-    <table id="cmp"></table>
-  </div>
-  <p class="note" style="margin-top:10px">※ 연비는 공인 복합연비, 자동차세는 배기량 기준 연간 근사치입니다. 실제 값은 매물·연식·감면에 따라 달라집니다.</p>
-</section>
-
-<section class="wrap">
-  <div class="sec-title"><span class="bar"></span>이럴 땐 이 차 — 상황별 추천</div>
-  <div class="recgrid" id="recs"></div>
+  <div class="tablewrap"><table id="cmp"></table></div>
+  <p class="note" style="margin-top:10px">※ 연비는 공인 복합연비, 자동차세는 배기량 기준 연간 근사치. ‘용도이력 있음’은 렌트·리스 등 사업용 사용 이력이 있었다는 뜻이라 참고하세요.</p>
 </section>
 
 <section class="wrap">
   <div class="sec-title"><span class="bar"></span>실물 보러 가기 전 체크리스트</div>
   <div class="checklist">
     <ul>
-      <li><span class="ck">✓</span><span><b>사고이력·보험이력</b> — 카히스토리(무료 조회)로 전손·침수·소유자 변경 확인</span></li>
-      <li><span class="ck">✓</span><span><b>실주행 vs 계기판</b> — 정비이력의 주행거리와 계기판 일치 여부</span></li>
-      <li><span class="ck">✓</span><span><b>하이브리드 배터리</b> — 르블랑(HEV)은 배터리 보증(10년/20만km) 잔여 확인</span></li>
-      <li><span class="ck">✓</span><span><b>LPG 봄베 검사</b> — LPG 차는 봄베 재검사 시기 확인</span></li>
-      <li><span class="ck">✓</span><span><b>하부·타이어</b> — 하부 부식, 타이어 4짝 제조주차 확인</span></li>
+      <li><span class="ck">✓</span><span><b>카히스토리 보험이력</b> — 내차피해·타차피해 보험처리 횟수/금액 직접 확인 (조건의 핵심!)</span></li>
+      <li><span class="ck">✓</span><span><b>용도이력</b> — ‘있음’인 차는 렌트/리스 이력. 관리상태·주행거리 더 꼼꼼히</span></li>
+      <li><span class="ck">✓</span><span><b>실주행 vs 계기판</b> — 정비이력 주행거리와 계기판 일치 여부</span></li>
+      <li><span class="ck">✓</span><span><b>외판·단차</b> — 도어·펜더 도색/교환 흔적, 패널 간격</span></li>
       <li><span class="ck">✓</span><span><b>편의옵션 작동</b> — 통풍/열선시트, 어라운드뷰, HUD 실제 작동</span></li>
       <li><span class="ck">✓</span><span><b>성능점검기록부</b> — 매매상사 제공 서류와 실차 대조</span></li>
       <li><span class="ck">✓</span><span><b>총비용</b> — 차값 외 이전비·매매수수료·탁송비 별도 계산</span></li>
+      <li><span class="ck">✓</span><span><b>시세 대조</b> — 같은 트림·연식·주행 매물과 가격 비교</span></li>
     </ul>
   </div>
 </section>
@@ -168,87 +150,59 @@
   <div class="sec-title"><span class="bar"></span>더 많은 매물 보기</div>
   <div class="srcbox">
     <div class="srcbox-txt">
-      위 6대는 <b>KB차차차</b> 실매물에서 선별했어요. 더 많은 그랜저 매물을 실시간으로 보시려면 아래 버튼을 눌러 보세요.
+      더 많은 그랜저 매물을 실시간으로 보시려면 아래 버튼을 눌러 보세요. <b>KB차차차</b> 그랜저 전체 매물이 열립니다.
     </div>
-    <div class="srcbtns">
-      <a class="btn srcbtn" target="_blank" rel="noopener"
-        href="https://www.kbchachacha.com/public/search/list.kbc#!?page=1&sort=-orderDate&makerCode=101&classCode=1101">KB차차차 그랜저 전체매물 →</a>
-    </div>
+    <a class="btn srcbtn" target="_blank" rel="noopener"
+      href="https://www.kbchachacha.com/public/search/list.kbc#!?page=1&sort=-orderDate&makerCode=101&classCode=1101">KB차차차 그랜저 전체매물 →</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div>데이터 출처 · <span class="src">KB차차차 (kbchachacha.com)</span> 실매물 · 조회 기준일 <b>2026년 9월 7일</b></div>
-    <p class="disc">중고차 매물은 실시간으로 판매·변동됩니다. 아래 “매물 보기”를 눌렀을 때 판매완료로 뜰 수 있으니,
-      마음에 드는 차종·트림을 기준으로 KB차차차·엔카에서 유사 매물을 다시 검색해 보시는 걸 추천드립니다.
-      가격·연비·세금은 참고용 근사치이며 계약 전 반드시 실차와 서류로 확인하세요.</p>
+    <div>데이터 출처 · <span class="src">KB차차차 (kbchachacha.com)</span> 실매물 · 조회 기준일 <b>2026년 9월 12일</b></div>
+    <p class="disc">중고차 매물은 실시간으로 판매·변동됩니다. “매물 보기”가 판매완료로 뜰 수 있으니, 마음에 드는 조건으로 다시 검색해 보세요.
+      가격·연비·세금·이력은 참고용이며, 특히 보험사고이력은 계약 전 카히스토리·성능점검기록부로 반드시 확인하세요.</p>
   </div>
 </footer>
 
 <script>
 const cars = [
-  {
-    seq:"28634988", gen:"GN7 신형", name:"디 올 뉴 그랜저 2.5 가솔린 프리미엄",
-    price:2950, year:"2023.03", km:24729, region:"경기", fuel:"가솔린",
-    disp:"2,497cc", econ:11.7, tax:65,
+  { seq:"28634988", pick:"저주행 추천", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 프리미엄",
+    price:2850, year:"2023.03", km:24729, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false,
     img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28634988_4552128989739423.jpeg",
-    pick:"최저 주행", tags:[["가솔린","f"],["신형 GN7","v"],["2.4만km","g"]],
-    note:"신형 그랜저 중 <b>가장 적은 주행거리(2.4만km)</b>. 무난한 2.5 가솔린에 최신 디자인·편의사양까지, 가장 균형 잡힌 선택."
-  },
-  {
-    seq:"28496946", gen:"GN7 신형", name:"디 올 뉴 그랜저 3.5 가솔린 프리미엄",
-    price:2699, year:"2023.08", km:33104, region:"경기", fuel:"가솔린",
-    disp:"3,470cc", econ:9.6, tax:90,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img09/img2849/28496946_5940147628907818.jpeg",
-    pick:"가성비 신형", tags:[["V6 3.5","f"],["신형 GN7","v"],["힘 좋음","g"]],
-    note:"신형 그랜저 <b>V6 3.5 가솔린을 2,699만원</b>에. 정숙성·가속감이 좋아 어르신 모시기 편안. 대신 연비·세금은 다소 높음."
-  },
-  {
-    seq:"28521955", gen:"GN7 신형", name:"디 올 뉴 그랜저 3.5 LPG 프리미엄",
-    price:2640, year:"2023.07", km:36839, region:"경기", fuel:"LPG",
-    disp:"3,470cc", econ:8.0, tax:90,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img02/img2852/28521955_1621422289036158.jpeg",
-    pick:"연료비 최저", tags:[["LPG","f"],["신형 GN7","v"],["연료비↓","g"]],
-    note:"신형에 <b>LPG라 연료비가 가장 저렴</b>(리터 900~1,100원대). 시내 위주로 많이 타실 아버님께 유지비 부담이 가장 적은 조합."
-  },
-  {
-    seq:"28545109", gen:"IG 더뉴", name:"더 뉴 그랜저 하이브리드 2.4 르블랑",
-    price:2860, year:"2022.06", km:36460, region:"경기", fuel:"하이브리드",
-    disp:"2,359cc", econ:16.2, tax:61,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2854/28545109_2165769414091466.jpeg",
-    pick:"연비 최고", tags:[["하이브리드","f"],["연비 16km","g"],["세금 최저","g"]],
-    note:"<b>공인연비 16.2km/L로 압도적</b>. 자동차세도 가장 낮고 정숙. 배터리 보증(10년/20만km)이 남아 장거리·시내 모두 유지비 최소."
-  },
-  {
-    seq:"28459176", gen:"IG 더뉴", name:"더 뉴 그랜저 3.3 캘리그래피",
-    price:2540, year:"2021.05", km:65650, region:"경기", fuel:"가솔린",
-    disp:"3,342cc", econ:9.7, tax:87,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img05/img2845/28459176_5163176336325363.jpeg",
-    pick:"최고급 트림", tags:[["캘리그래피","v"],["V6 3.3","f"],["최저가","g"]],
-    note:"그랜저 <b>최상위 트림 ‘캘리그래피’를 2,540만원</b>에. 나파가죽·통풍시트 등 풀옵션급. 주행거리는 있지만 품위 있게 모시기 좋은 값."
-  },
-  {
-    seq:"27996431", gen:"IG 더뉴", name:"더 뉴 그랜저 2.5 캘리그래피",
-    price:2800, year:"2022.07", km:26000, region:"경남", fuel:"가솔린",
-    disp:"2,497cc", econ:11.6, tax:65,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img09/img2799/27996431_17268568187402098.jpg",
-    pick:"저주행·풀옵션", tags:[["캘리그래피","v"],["2.6만km","g"],["가솔린","f"]],
-    note:"<b>캘리그래피 최상위 옵션에 주행 2.6만km</b>. 2.5 가솔린이라 세금·연비도 부담 적고, 관리만 좋다면 신차 느낌으로 오래 탈 만."
-  }
+    note:"조건 매물 중 <b>주행거리가 가장 짧아요(2.4만km)</b>. 개인용(용도이력 없음)에 전손·침수·소유자변경 모두 없음. 예산 안에서 가장 무난한 선택." },
+  { seq:"28744220", pick:"상위트림·개인용", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
+    price:2890, year:"2023.01", km:34690, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2874/28744220_7757217644379635.jpeg",
+    note:"프리미엄보다 한 단계 위인 <b>익스클루시브 트림</b>. 용도이력 없는 개인용이고 이력도 깨끗. 편의사양을 좀 더 챙기고 싶을 때." },
+  { seq:"27961945", pick:"V6 3.5·예산내", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 3.5 가솔린 AWD 프리미엄",
+    price:2949, year:"2023.01", km:32770, region:"경기", disp:"3,470cc", econ:9.0, tax:90, yongdo:false,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img06/img2796/27961945_307615088653336.jpeg",
+    note:"<b>V6 3.5 + 4륜(AWD)을 3천만원 아래</b>에. 정숙·가속이 좋아 어르신 모시기 편안. 연비·세금은 2.5보다 높은 점만 참고." },
+  { seq:"28635586", pick:"2024년식", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
+    price:2990, year:"2024.05", km:39950, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28635586_6998363494955447.jpeg",
+    note:"목록 중 <b>연식이 가장 최신(2024년)</b>. 주행은 4만km에 가깝지만 그만큼 신차 감가가 반영돼 값이 좋음. 개인용·클린이력." },
+  { seq:"28634260", pick:"그레이·최고급", color:"그레이", hex:"#6b7079", name:"디 올 뉴 그랜저 3.5 가솔린 캘리그래피",
+    price:3200, year:"2023.03", km:34616, region:"경기", disp:"3,470cc", econ:9.6, tax:90, yongdo:false,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28634260_4541339386104087.jpeg",
+    note:"<b>그레이 컬러 + 최상위 캘리그래피 + V6 3.5</b>. 나파가죽·통풍시트 등 풀옵션급이고 용도이력도 없음. 품위 있게 모시기 좋은 매물." },
+  { seq:"28745825", pick:"그레이·저주행", color:"그레이", hex:"#6b7079", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
+    price:3069, year:"2023.07", km:27839, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:true,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2874/28745825_7605484372666991.jpeg",
+    note:"<b>그레이에 주행 2.8만km로 짧은</b> 익스클루시브. 다만 <b>용도이력 있음</b>(렌트·리스 사용 이력)이라 관리상태를 특히 꼼꼼히 보세요." }
 ];
 
 const won = n => n.toLocaleString('ko-KR');
 const detail = s => `https://www.kbchachacha.com/public/car/detail.kbc?carSeq=${s}`;
 
-// cards
 document.getElementById('cards').innerHTML = cars.map(c=>`
   <article class="card">
     <div class="thumb">
       <img src="${c.img}" alt="${c.name}" loading="lazy"
         onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#1a2130,#2a3550)';">
       <span class="badge pick">${c.pick}</span>
-      <span class="gen">${c.gen}</span>
+      <span class="colorchip"><span class="dot" style="background:${c.hex}"></span>${c.color}</span>
     </div>
     <div class="card-body">
       <div class="car-name">${c.name}</div>
@@ -259,46 +213,34 @@ document.getElementById('cards').innerHTML = cars.map(c=>`
         <div class="spec"><div class="k">복합연비</div><div class="v">${c.econ} km/L</div></div>
         <div class="spec"><div class="k">연간 자동차세</div><div class="v">약 ${c.tax}만원</div></div>
       </div>
-      <div class="tags">${c.tags.map(t=>`<span class="tag ${t[1]}">${t[0]}</span>`).join('')}</div>
+      <div class="hist">
+        <span class="h">전손 없음</span>
+        <span class="h">침수 없음</span>
+        <span class="h">소유자변경 없음</span>
+        <span class="h ${c.yongdo?'warn':''}">${c.yongdo?'용도이력 있음':'용도이력 없음'}</span>
+      </div>
       <div class="note">${c.note}</div>
-      <a class="btn" href="${detail(c.seq)}" target="_blank" rel="noopener">KB차차차에서 매물 보기 →</a>
+      <a class="btn" href="${detail(c.seq)}" target="_blank" rel="noopener">KB차차차에서 매물 보기 · 카히스토리 확인 →</a>
     </div>
   </article>`).join('');
 
-// comparison table
-const minKm = Math.min(...cars.map(c=>c.km));
-const maxEcon = Math.max(...cars.map(c=>c.econ));
-const minTax = Math.min(...cars.map(c=>c.tax));
-const minPrice = Math.min(...cars.map(c=>c.price));
-const rows = [
+const minKm=Math.min(...cars.map(c=>c.km)), maxEcon=Math.max(...cars.map(c=>c.econ)),
+      minTax=Math.min(...cars.map(c=>c.tax)), minPrice=Math.min(...cars.map(c=>c.price));
+const rows=[
   ["가격", c=>`${won(c.price)}만원`, c=>c.price===minPrice],
-  ["세대", c=>c.gen, ()=>false],
+  ["색상", c=>c.color, ()=>false],
   ["연식", c=>c.year, ()=>false],
   ["주행거리", c=>`${won(c.km)}km`, c=>c.km===minKm],
-  ["연료", c=>c.fuel, ()=>false],
   ["배기량", c=>c.disp, ()=>false],
   ["복합연비", c=>`${c.econ}km/L`, c=>c.econ===maxEcon],
   ["연간 자동차세", c=>`약 ${c.tax}만원`, c=>c.tax===minTax],
-  ["트림 특징", c=>c.pick, ()=>false],
+  ["용도이력", c=>c.yongdo?'있음':'없음', c=>!c.yongdo],
+  ["전손·침수", ()=>'없음', ()=>true],
 ];
-let thead = `<thead><tr><th>항목</th>${cars.map(c=>`<th>${c.name.replace('그랜저 ','그랜저 ')}<span class="cell-sub">${c.gen}</span></th>`).join('')}</tr></thead>`;
-let tbody = `<tbody>${rows.map(r=>`<tr><th>${r[0]}</th>${cars.map(c=>{
-  const best=r[2](c); return `<td class="${best?'best':''}">${r[1](c)}${best?' ★':''}</td>`;}).join('')}</tr>`).join('')}</tbody>`;
-document.getElementById('cmp').innerHTML = thead+tbody;
-
-// recommendations
-const recs = [
-  {ic:"⛽",bg:"rgba(79,209,165,.16)",t:"유지비를 가장 아끼려면",p:"연비 16.2km/L에 자동차세도 최저. 기름값·세금 부담이 가장 적어요.",win:"→ 더 뉴 그랜저 하이브리드 2.4 르블랑"},
-  {ic:"✨",bg:"rgba(177,140,255,.16)",t:"가장 최신 차를 원하면",p:"신형 GN7 세대에 주행 2.4만km. 최신 디자인·안전·편의사양.",win:"→ 디 올 뉴 그랜저 2.5 가솔린 프리미엄"},
-  {ic:"👑",bg:"rgba(230,185,128,.18)",t:"최고급 옵션으로 모시려면",p:"캘리그래피 풀옵션(통풍시트·나파가죽)을 가장 저렴하게.",win:"→ 더 뉴 그랜저 3.3 캘리그래피"},
-  {ic:"💰",bg:"rgba(91,156,255,.16)",t:"연료비까지 최소로",p:"신형인데 LPG라 주유비가 가장 저렴. 시내 주행 많으면 유리.",win:"→ 디 올 뉴 그랜저 3.5 LPG 프리미엄"},
-];
-document.getElementById('recs').innerHTML = recs.map(r=>`
-  <div class="rec">
-    <h3><span class="ic" style="background:${r.bg}">${r.ic}</span>${r.t}</h3>
-    <p>${r.p}</p>
-    <div class="win">${r.win}</div>
-  </div>`).join('');
+const short=n=>n.replace('디 올 뉴 그랜저 ','').replace('가솔린 ','');
+let thead=`<thead><tr><th>항목</th>${cars.map(c=>`<th>${short(c.name)}<span class="cell-sub">${c.color} · ${c.year}</span></th>`).join('')}</tr></thead>`;
+let tbody=`<tbody>${rows.map(r=>`<tr><th>${r[0]}</th>${cars.map(c=>{const b=r[2](c);return `<td class="${b?'best':''}">${r[1](c)}${b?' ★':''}</td>`;}).join('')}</tr>`).join('')}</tbody>`;
+document.getElementById('cmp').innerHTML=thead+tbody;
 </script>
 </body>
 </html>
