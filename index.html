@@ -180,7 +180,7 @@
 
 <footer>
   <div class="wrap">
-    <div>데이터 출처 · <span class="src">KB차차차 (kbchachacha.com)</span> 실매물 · 조회 기준일 <b>2026년 9월 12일</b></div>
+    <div>데이터 출처 · <span class="src">KB차차차 (kbchachacha.com)</span> 실매물 · 조회 기준일 <b>2026년 9월 14일</b></div>
     <p class="disc">중고차 매물은 실시간으로 판매·변동됩니다. “매물 보기”가 판매완료로 뜰 수 있으니, 마음에 드는 조건으로 다시 검색해 보세요.
       가격·연비·세금·이력은 참고용이며, 특히 보험사고이력은 계약 전 카히스토리·성능점검기록부로 반드시 확인하세요.</p>
   </div>
@@ -188,28 +188,28 @@
 
 <script>
 const cars = [
-  { seq:"28634988", pick:"저주행 추천", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 프리미엄",
-    price:2850, year:"2023.03", km:24729, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false,
+  { seq:"28634988", pick:"소유자변경 0회", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 프리미엄",
+    price:2850, year:"2023.03", km:24729, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false, owner:0,
     img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28634988_4552128989739423.jpeg",
-    note:"조건 매물 중 <b>주행거리가 가장 짧아요(2.4만km)</b>. 개인용(용도이력 없음)에 전손·침수·소유자변경 모두 없음. 예산 안에서 가장 무난한 선택." },
-  { seq:"28744220", pick:"상위트림·개인용", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
-    price:2890, year:"2023.01", km:34690, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2874/28744220_7757217644379635.jpeg",
-    note:"프리미엄보다 한 단계 위인 <b>익스클루시브 트림</b>. 용도이력 없는 개인용이고 이력도 깨끗. 편의사양을 좀 더 챙기고 싶을 때." },
-  { seq:"27961945", pick:"V6 3.5·예산내", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 3.5 가솔린 AWD 프리미엄",
-    price:2949, year:"2023.01", km:32770, region:"경기", disp:"3,470cc", econ:9.0, tax:90, yongdo:false,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img06/img2796/27961945_307615088653336.jpeg",
-    note:"<b>V6 3.5 + 4륜(AWD)을 3천만원 아래</b>에. 정숙·가속이 좋아 어르신 모시기 편안. 연비·세금은 2.5보다 높은 점만 참고." },
-  { seq:"28635586", pick:"2024년식", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
-    price:2990, year:"2024.05", km:39950, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false,
-    img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28635586_6998363494955447.jpeg",
-    note:"목록 중 <b>연식이 가장 최신(2024년)</b>. 주행은 4만km에 가깝지만 그만큼 신차 감가가 반영돼 값이 좋음. 개인용·클린이력." },
+    note:"조건 매물 중 <b>소유자변경까지 없는 1인 신조급</b>. 주행 2.4만km·개인용(용도이력 없음)으로 가장 깨끗. 예산 안에서 가장 무난한 선택." },
+  { seq:"28526566", pick:"NEW · 2025년식", color:"그레이", hex:"#6b7079", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
+    price:3550, year:"2025.09", km:10136, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:false, owner:1,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img02/img2852/28526566_7131766536984220.jpeg",
+    note:"이번 갱신에서 새로 찾은 <b>2025년 9월식 · 주행 1만km, 사실상 신차</b>. 컨디션 최상. 값은 높지만 신차 대비 확실히 저렴." },
+  { seq:"28459707", pick:"V6 · 최저가", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 3.5 가솔린 캘리그래피",
+    price:2550, year:"2023.06", km:20367, region:"경기", disp:"3,470cc", econ:9.6, tax:90, yongdo:false, owner:2,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img05/img2845/28459707_232071969744573.jpeg",
+    note:"이번 갱신 신규. <b>V6 3.5 캘리그래피를 2,550만원</b>에, 주행도 2만km로 짧음. 소유자변경 2회가 가격에 반영된 가성비 매물." },
   { seq:"28634260", pick:"그레이·최고급", color:"그레이", hex:"#6b7079", name:"디 올 뉴 그랜저 3.5 가솔린 캘리그래피",
-    price:3200, year:"2023.03", km:34616, region:"경기", disp:"3,470cc", econ:9.6, tax:90, yongdo:false,
+    price:3200, year:"2023.03", km:34616, region:"경기", disp:"3,470cc", econ:9.6, tax:90, yongdo:false, owner:1,
     img:"https://img.kbchachacha.com/IMG/carimg/l/img03/img2863/28634260_4541339386104087.jpeg",
-    note:"<b>그레이 컬러 + 최상위 캘리그래피 + V6 3.5</b>. 나파가죽·통풍시트 등 풀옵션급이고 용도이력도 없음. 품위 있게 모시기 좋은 매물." },
+    note:"<b>그레이 + 최상위 캘리그래피 + V6 3.5</b>. 나파가죽·통풍시트 등 풀옵션급이고 용도이력도 없음. 품위 있게 모시기 좋은 매물." },
+  { seq:"27961945", pick:"V6 · 가성비", color:"블랙", hex:"#111", name:"디 올 뉴 그랜저 3.5 가솔린 AWD 프리미엄",
+    price:2949, year:"2023.01", km:32770, region:"경기", disp:"3,470cc", econ:9.0, tax:90, yongdo:false, owner:3,
+    img:"https://img.kbchachacha.com/IMG/carimg/l/img06/img2796/27961945_307615088653336.jpeg",
+    note:"<b>V6 3.5 + 4륜(AWD)을 3천만원 아래</b>에. 힘·정숙 최고. 소유자변경 3회는 감안해야 하지만 그만큼 가격 이점이 큼." },
   { seq:"28745825", pick:"그레이·저주행", color:"그레이", hex:"#6b7079", name:"디 올 뉴 그랜저 2.5 가솔린 익스클루시브",
-    price:3069, year:"2023.07", km:27839, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:true,
+    price:3069, year:"2023.07", km:27839, region:"경기", disp:"2,497cc", econ:11.7, tax:65, yongdo:true, owner:1,
     img:"https://img.kbchachacha.com/IMG/carimg/l/img04/img2874/28745825_7605484372666991.jpeg",
     note:"<b>그레이에 주행 2.8만km로 짧은</b> 익스클루시브. 다만 <b>용도이력 있음</b>(렌트·리스 사용 이력)이라 관리상태를 특히 꼼꼼히 보세요." }
 ];
@@ -237,7 +237,7 @@ document.getElementById('cards').innerHTML = cars.map(c=>`
       <div class="hist">
         <span class="h">전손 없음</span>
         <span class="h">침수 없음</span>
-        <span class="h">소유자변경 없음</span>
+        <span class="h ${c.owner>0?'warn':''}">${c.owner>0?'소유자변경 '+c.owner+'회':'소유자변경 없음'}</span>
         <span class="h ${c.yongdo?'warn':''}">${c.yongdo?'용도이력 있음':'용도이력 없음'}</span>
       </div>
       <div class="note">${c.note}</div>
@@ -255,6 +255,7 @@ const rows=[
   ["배기량", c=>c.disp, ()=>false],
   ["복합연비", c=>`${c.econ}km/L`, c=>c.econ===maxEcon],
   ["연간 자동차세", c=>`약 ${c.tax}만원`, c=>c.tax===minTax],
+  ["소유자변경", c=>c.owner>0?`${c.owner}회`:'없음', c=>c.owner===0],
   ["용도이력", c=>c.yongdo?'있음':'없음', c=>!c.yongdo],
   ["전손·침수", ()=>'없음', ()=>true],
 ];
